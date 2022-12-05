@@ -1,0 +1,25 @@
+{
+    "data": {
+        "id": "101",
+        "groupCode": "floor 1",
+        "guests": [
+            {
+                "name":{
+                    "prefix": null,
+                    "first": null,
+                    "middle": null,
+                    "last": "Donald", 
+                    "suffix": null,
+                    "full": "enda"
+                },
+                "balance": null,
+                "language": null,
+                "no_post": null,
+                "vip_status": null,
+                "id": "102-2",
+                "option": null,
+                "channel_preference": null
+            }
+        ]
+    }
+}    

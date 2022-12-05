@@ -8,10 +8,13 @@ router.get("/statuses", pmsController.getPMSStatus );
 
 router.get("/details", pmsController.getSiteInfo);
 
-router.post("/subscriptions", pmsController.createSubscription );
+router.post("/subscriptions", pmsController.createSub );
 
-router.get("/subscriptions/:id", pmsController.getSubscription );
+router.route("/subscriptions/:id")
+    .get(pmsController.getSubById )
+    .put(pmsController.updateSub)
+    .delete(pmsController.deleteSub)
 
-router.get("/rooms/:roomId", pmsController.getRoomInfo );
+router.get("/rooms/:roomId", pmsController.getRoomById );
 
 module.exports = router;
